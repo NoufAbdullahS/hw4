@@ -1,38 +1,50 @@
 function validateForm() {
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
+  var name = document.getElementById("name");
+  var email = document.getElementById("email");
 
-  if (name === "" || email === "") {
+  if (name.value === "" || email.value === "") {
     alert("Please fill out all required fields.");
     return false;
+  } else {
+    return true;
   }
-
-  return true;
 }
 
 function toggleDescription(id) {
-  var desc = document.getElementById(id);
+  var description = document.getElementById(id);
 
-  if (desc.style.display === "none") {
-    desc.style.display = "block";
+  if (description.style.display === "none") {
+    description.style.display = "block";
   } else {
-    desc.style.display = "none";
+    description.style.display = "none";
   }
 }
 
-function changeStyleOnHover() {
-  var quote = document.querySelector("blockquote");
-  quote.style.backgroundColor = "#eaf2ff";
+function setupQuoteEvents() {
+  var quote = document.getElementById("quote");
+
+  if (quote) {
+    quote.addEventListener("mouseover", function() {
+      quote.style.backgroundColor = "#eaf2ff";
+    });
+
+    quote.addEventListener("mouseout", function() {
+      quote.style.backgroundColor = "";
+    });
+  }
 }
 
-function resetStyle() {
-  var quote = document.querySelector("blockquote");
-  quote.style.backgroundColor = "";
+function addLoadMessage() {
+  var footer = document.querySelector("footer");
+  var paragraph = document.createElement("p");
+  var date = new Date();
+  var text = document.createTextNode("Page loaded on: " + date);
+
+  paragraph.appendChild(text);
+  footer.appendChild(paragraph);
 }
 
 window.onload = function() {
-  var p = document.createElement("p");
-  var text = document.createTextNode("Page loaded on: " + new Date());
-  p.appendChild(text);
-  document.querySelector("footer").appendChild(p);
+  setupQuoteEvents();
+  addLoadMessage();
 };
