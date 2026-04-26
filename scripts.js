@@ -22,14 +22,14 @@ function toggleDescription(id) {
 
 function setupQuoteEvents() {
   var quote = document.getElementById("quote");
-  alert(quote);
+
   if (quote) {
     quote.addEventListener("mouseover", function() {
-      quote.style.backgroundColor = "red";
+      quote.style.fontStyle = "italic";
     });
 
     quote.addEventListener("mouseout", function() {
-      quote.style.backgroundColor = "";
+      quote.style.fontStyle = "normal";    
     });
   }
 }
