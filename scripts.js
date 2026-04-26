@@ -25,7 +25,7 @@ function setupQuoteEvents() {
 
   if (quote) {
     quote.addEventListener("mouseover", function() {
-      quote.style.backgroundColor = "#20405e";
+      quote.style.backgroundColor = "red";
     });
 
     quote.addEventListener("mouseout", function() {
