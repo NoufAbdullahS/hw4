@@ -25,11 +25,11 @@ function setupQuoteEvents() {
 
   if (quote) {
     quote.addEventListener("mouseover", function() {
-      quote.style.fontStyle = "italic";
+      quote.querySelector("p").style.backgroundColor = "red";
     });
 
     quote.addEventListener("mouseout", function() {
-      quote.style.fontStyle = "normal";    
+      quote.querySelector("p").style.backgroundColor = "";
     });
   }
 }
