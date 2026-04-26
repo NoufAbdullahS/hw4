@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  background-color: #f4f4f4;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2c3e50;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #1f2d3a;
+  padding: 0.75rem;
+}
+
+nav ul {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 0.1rem 0.1rem 0.2rem gray;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1rem;
+  text-align: left;
+  font-style: normal;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+dl {
+  margin: 1rem 0;
+}
+
+a {
+  color: #1a73e8;
+}
+
+main {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 0.1rem solid #cccccc;
+  background-color: white;
+}
+
+article,
+section,
+form,
+figure {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 0.1rem solid #dddddd;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.highlight {
+  color: #2c3e50;
+  background-color: #d3dded;
+  padding: 0.2rem;}
+
+#intro {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 0.15rem solid #2c3e50;
+  padding-bottom: 0.5rem;
+}
